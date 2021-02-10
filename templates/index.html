@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HR OPERATION MANAGMENT</title>
+
+  <!-- Bootstrap -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- =======================================================
+    Theme Name: Day
+    Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+    {% include 'mainHeader.html' %}
+  <!--/header-->
+
+  {% include 'slider.html' %}
+  <!--/#slider-->
+
+    <hr>
+
+<section class="action">
+    <div class="container">
+      <div class="left-text hidden-xs">
+          <div class="container">
+        <h4>Amet porro numquam ratione</h4>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            Nisi ut explicabo magni sapiente.
+        Inventore at quia, vel in repellendus, cumque
+            dolorem autem
+            ad quidem mollitia porro blanditiis atque rerum debitis
+            eveniet nostrum aliquam.
+          Sint aperiam expedita sapiente amet officia quis
+            perspiciatis
+            adipisci, iure dolorem esse exercitationem!
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
+    {% include 'mainfooter.html' %}
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+</body>
+
+</html>

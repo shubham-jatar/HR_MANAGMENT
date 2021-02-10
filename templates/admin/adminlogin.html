@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+{% include 'mainHeader.html' %}
+<link rel="stylesheet" href="{% static 'css/adminlogin.css' %}">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <!-- Icon -->
+    <div class="fadeIn first">
+{#      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />#}
+    <span><h1 style="background-color: #00abf0">Admin Login </h1></span>
+    </div>
+
+    <!-- Login Form -->
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" autocomplete="off" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+        {% if data %}
+        <div>
+
+          <h3 style="background-color: #00abf0;color: white">{{ data }}</h3>
+
+        </div>
+        {% endif %}
+    </form>
+  </div>
+</div>
+{% include 'mainfooter.html' %}
+</html>
